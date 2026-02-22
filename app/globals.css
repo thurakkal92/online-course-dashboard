@@ -1,5 +1,121 @@
 @import "tailwindcss";
 
+@theme {
+  /* ── Typography ─────────────────────────────────────────────────────────── */
+
+  /* Font sizes */
+  --font-size-h1: 3rem; /* 48px */
+  --font-size-h2: 2.5rem; /* 40px */
+  --font-size-h3: 2rem; /* 32px */
+  --font-size-subtitle1: 1.75rem; /* 28px */
+  --font-size-subtitle2: 1.4375rem; /* 23px */
+  --font-size-body1: 1.1875rem; /* 19px */
+  --font-size-body2: 1rem; /* 16px */
+  --font-size-caption1: 0.875rem; /* 14px */
+  --font-size-caption2: 0.75rem; /* 12px */
+
+  /* Line heights (all 140%) */
+  --line-height-h1: 1.4;
+  --line-height-h2: 1.4;
+  --line-height-h3: 1.4;
+  --line-height-subtitle1: 1.4;
+  --line-height-subtitle2: 1.4;
+  --line-height-body1: 1.4;
+  --line-height-body2: 1.4;
+  --line-height-caption1: 1.4;
+  --line-height-caption2: 1.4;
+
+  /* ── Colors ─────────────────────────────── */
+  --color-text-bold: #0f172a;
+  --color-text-default: #334155;
+  --color-text-subtle: #94a3b8;
+  --color-text-inverse: #f8fafc;
+  --color-text-error: #ef4444;
+  --color-text-warning: #eab308;
+  --color-text-info: #00598a;
+  --color-text-success: #00bc7d;
+  --color-text-light: #ffffff;
+  --color-text-dark: #0f172a;
+
+  /* ── Background ─────────────────────────────────────────────────────────── */
+  --color-bg-default: #f1f5f9;
+  --color-bg-paper: #ffffff;
+  --color-bg-inverse: #0f172a;
+  --color-bg-medium: #e2e8f0;
+
+  /* ── Semantic ───────────────────────────────────────────────────────────── */
+  --color-error: #ef4444;
+  --color-error-subtle: #ef444452; /* 32% opacity */
+  --color-info: #00a6f4;
+  --color-info-subtle: #00a6f452; /* 32% opacity */
+  --color-success: #00bc7d;
+  --color-success-subtle: #00bc7d52; /* 32% opacity */
+  --color-warning: #eab308;
+  --color-warning-subtle: #eab30852; /* 32% opacity */
+
+  /* ── Border ─────────────────────────────────────────────────────────────── */
+  --color-border-default: #e2e8f0;
+  --color-border-subtle: #f1f5f9;
+  --color-border-medium: #cbd5e1;
+  --color-border-bold: #64748b;
+  --color-border-hover: #334155;
+
+  /* ── Brand ──────────────────────────────────────────────────────────────── */
+  --color-brand-default: #00bc7d;
+  --color-brand-medium: #007a54;
+  --color-brand-subtle: #ecfdf5;
+  --color-brand-bold: #004f3b;
+}
+
+@utility text-h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+}
+
+@utility text-h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-weight: 600;
+}
+
+@utility text-h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  font-weight: 600;
+}
+
+@utility text-subtitle-1 {
+  font-size: var(--font-size-subtitle1);
+  line-height: var(--line-height-subtitle1);
+  font-weight: 600;
+}
+
+@utility text-subtitle-2 {
+  font-size: var(--font-size-subtitle2);
+  line-height: var(--line-height-subtitle2);
+  font-weight: 600;
+}
+
+@utility text-body-1 {
+  font-size: var(--font-size-body1);
+  line-height: var(--line-height-body1);
+}
+
+@utility text-body-2 {
+  font-size: var(--font-size-body2);
+  line-height: var(--line-height-body2);
+}
+
+@utility text-caption-1 {
+  font-size: var(--font-size-caption1);
+  line-height: var(--line-height-caption1);
+}
+
+@utility text-caption-2 {
+  font-size: var(--font-size-caption2);
+  line-height: var(--line-height-caption2);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,7 +136,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg-default);
+  color: var(--color-text-bold);
+  font-family:
+    var(--font-geist-sans), var(--font-geist-mono), Arial, Helvetica, sans-serif;
 }
