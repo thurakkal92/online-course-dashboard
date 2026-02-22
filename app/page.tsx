@@ -13,7 +13,7 @@ export default function Home() {
   const { greeting } = getTimeGreeting("Nabeel Thurakkal");
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-bg-default font-sans dark:bg-black">
+    <div className="flex flex-col min-h-screen items-center justify-center bg-bg-default font-sans">
       <Header />
       <main className="container max-auto min-h-screen w-full items-center justify-between sm:items-start px-4">
         <section>
