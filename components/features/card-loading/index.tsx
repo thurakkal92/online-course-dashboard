@@ -78,16 +78,6 @@ function SectionHeaderSkeleton({
   );
 }
 
-function FilterTabsSkeleton() {
-  return (
-    <div className="flex items-center gap-2">
-      {[60, 80, 72, 64, 72].map((w, i) => (
-        <Shimmer key={i} className={`h-8 w-${w} rounded-full`} />
-      ))}
-    </div>
-  );
-}
-
 export default function DashboardSkeleton() {
   return (
     <div className="flex flex-col gap-14 w-full pt-4 lg:pt-7">
@@ -108,7 +98,6 @@ export default function DashboardSkeleton() {
             <Shimmer className="h-6 w-52" />
             <Shimmer className="h-4 w-64" />
           </div>
-          <FilterTabsSkeleton />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {Array.from({ length: 4 }).map((_, i) => (
